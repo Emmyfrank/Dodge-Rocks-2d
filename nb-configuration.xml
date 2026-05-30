@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-shared-configuration xmlns="http://www.netbeans.org/ns/shared-project/1">
+    <properties xmlns="http://www.netbeans.org/ns/maven-properties-data/1">
+        <netbeans.hint.jdkPlatform>JDK_17</netbeans.hint.jdkPlatform>
+        <netbeans.hint.activateProfile>default</netbeans.hint.activateProfile>
+    </properties>
+</project-shared-configuration>

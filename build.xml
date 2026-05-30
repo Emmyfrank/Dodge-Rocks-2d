@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="DodgeRocks" default="run" basedir=".">
+    <description>Simple 2D dodge game (NetBeans / Ant)</description>
+    <property file="nbproject/project.properties"/>
+    <property file="nbproject/private/private.properties" optional="true"/>
+
+    <target name="init">
+        <mkdir dir="${build.dir}"/>
+        <mkdir dir="${build.classes.dir}"/>
+    </target>
+
+    <target name="compile" depends="init" description="Compile all sources.">
+        <javac srcdir="${src.dir}"
+               destdir="${build.classes.dir}"
+               source="${javac.source}"
+               target="${javac.target}"
+               includeantruntime="false"
+               encoding="${source.encoding}"/>
+    </target>
+
+    <target name="run" depends="compile" description="Run the game.">
+        <java classname="${main.class}" fork="true" failonerror="true">
+            <classpath>
+                <path path="${run.classpath}"/>
+            </classpath>
+        </java>
+    </target>
+
+    <target name="jar" depends="compile" description="Build JAR.">
+        <mkdir dir="${dist.dir}"/>
+        <jar destfile="${dist.jar}" basedir="${build.classes.dir}">
+            <manifest>
+                <attribute name="Main-Class" value="${main.class}"/>
+            </manifest>
+        </jar>
+    </target>
+
+    <target name="clean" description="Remove build outputs.">
+        <delete dir="${build.dir}"/>
+        <delete dir="${dist.dir}"/>
+    </target>
+</project>
