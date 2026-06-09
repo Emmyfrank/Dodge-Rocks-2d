@@ -1,3 +1,4 @@
+# Masters Of Science And Information Technology (MSCIT)
 # 🎮 Simple 2D Game (Java)
 
 ## 📖 Project Overview
@@ -14,7 +15,7 @@ The project was developed as a **Java Group Assignment** to demonstrate object-o
 
 ---
 
-# 👥 Group Members
+#👥 Group Members
 
 | No. | Student Name | Registration Number |
 |-----|-------------|---------------------|
